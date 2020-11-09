@@ -33,6 +33,6 @@ jobs:
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
     - name: AWS CodePipeline Trigger
-        run: |
+      run: |
           aws --version
           aws s3 cp --metadata '{"touched":"now"}' s3://cloudgeeks-ca-s3/codedeploy/codedeploy.zip s3://cloudgeeks-ca-s3/codedeploy/codedeploy.zip  
