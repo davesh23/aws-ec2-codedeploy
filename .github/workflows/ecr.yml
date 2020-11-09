@@ -1,0 +1,19 @@
+name:   AWS ECR GitHub Actions
+on:
+   push:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-20.04:latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      - name: docker build nginx-app
+        run: |
+          docker build ./app -t nginx:v1
