@@ -5,6 +5,11 @@
 # Note: Role must be attached for ECR image pull/push
 # https://docs.amazonaws.cn/en_us/codedeploy/latest/userguide/application-revisions-appspec-file.html
 
+# Docker Installation
+
+yum install -y docker
+systemctl start docker
+systemctl enable docker
 
 # Existing containers & Images Clean Up
 
