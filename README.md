@@ -11,7 +11,8 @@ https://cloudgeeks.ca
 
 # 3. Create AS Group
  
-# 4. s3 bucket ---> put .zip  ---> s3://cloudgeeks-ca-app/codedeploy/codedeploy.zip      ---> update .zip with ECR URI ---> eg.ECR REPO NAME cloudgeeks-nginx ---> ECR REPO URI 286601674019.dkr.ecr.us-east-1.amazonaws.com/cloudgeeks-nginx
+# 4. s3 bucket ---> put .zip  ---> s3://cloudgeeks-ca-app/codedeploy/codedeploy.zip      ---> update .zip with ECR URI ---> eg.ECR REPO NAME cloudgeeks-nginx ---> ECR REPO URI 286601674019.dkr.ecr.us-east-1.amazonaws.com/cloudgeeks-nginx   ---> MUST convert the bash script ---> dos2unix app.sh  ---> dos2unix: converting file app.sh to Unix format...
+
 
 # 5.A PUSH DOCKER IMAGE TO AWS with GITHUBACTIONS ---> aws-ecr-codedeploy/.github/workflows/ecr.yml
 
