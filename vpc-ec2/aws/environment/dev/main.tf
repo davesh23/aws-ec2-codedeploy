@@ -35,6 +35,7 @@ module "ec2" {
   root_volume_size            = 30
   subnet_ids                  = module.vpc.public-subnet-ids
   vpc_security_group_ids      = [module.sg1.aws_security_group_default]
+  user_data                   = file("../../modules/aws-ec2/user-data/user-data.sh")
 
 }
 
