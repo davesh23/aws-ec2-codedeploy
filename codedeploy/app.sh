@@ -5,11 +5,6 @@
 # Note: Role must be attached for ECR image pull/push
 # https://docs.amazonaws.cn/en_us/codedeploy/latest/userguide/application-revisions-appspec-file.html
 
-# Docker Installation
-
-yum install -y docker
-systemctl start docker
-systemctl enable docker
 
 # Existing containers & Images Clean Up
 
@@ -27,6 +22,6 @@ TAG=`aws ecr describe-images --repository-name cloudgeeks-nginx --query 'sort_by
 
 export TAG
 
-docker run --name cloudgeeks-ca-nginx -p 80:80 --restart unless-stopped -d 286601674019.dkr.ecr.us-east-1.amazonaws.com/cloudgeeks-nginx:"$TAG"
+docker run --name cloudgeeks-ca -p 80:80 --restart unless-stopped -d 286601674019.dkr.ecr.us-east-1.amazonaws.com/cloudgeeks-nginx:"$TAG"
 
 # END
