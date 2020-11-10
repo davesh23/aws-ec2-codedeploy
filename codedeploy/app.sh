@@ -27,6 +27,6 @@ TAG=`aws ecr describe-images --repository-name cloudgeeks-nginx --query 'sort_by
 
 export TAG
 
-docker run --name cloudgeeks-ca-nginx -p 80:80 --restart unless-stopped -d 817333706759.dkr.ecr.us-east-1.amazonaws.com/cloudgeeks-nginx:"$TAG"
+docker run --name cloudgeeks-ca-nginx -p 80:80 --restart unless-stopped -d 286601674019.dkr.ecr.us-east-1.amazonaws.com/cloudgeeks-nginx:"$TAG"
 
 # END

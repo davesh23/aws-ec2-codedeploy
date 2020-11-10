@@ -32,9 +32,7 @@ service codedeploy-agent start
 
 # Docker Installation
 
-yum install -y docker
-systemctl start docker
-systemctl enable docker
+yum install -y docker && systemctl start docker && systemctl enable docker
 
 
 
