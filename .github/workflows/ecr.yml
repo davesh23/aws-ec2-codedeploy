@@ -35,4 +35,4 @@ jobs:
     - name: AWS CodePipeline Trigger
       run: |
           aws --version
-          aws s3 cp --metadata '{"touched":"now"}' s3://cloudgeeks-ca-s3/codedeploy/codedeploy.zip s3://cloudgeeks-ca-s3/codedeploy/codedeploy.zip  
+          aws s3 cp --metadata '{"touched":"now"}' s3://cloudgeeks-ca-app/codedeploy/codedeploy.zip s3://cloudgeeks-ca-app/codedeploy/codedeploy.zip  
