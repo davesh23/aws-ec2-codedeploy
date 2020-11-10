@@ -1,12 +1,14 @@
-1. Create a Role for EC2 with ECR access ---> AmazonEC2ContainerRegistryPowerUser + AmazonEC2RoleforAWSCodeDeploy
+# STEPS
 
-2. Create Launch Configuration ---> ami-0947d2ba12ee1ff75
+# 1. Create a Role for EC2 with ECR access ---> AmazonEC2ContainerRegistryPowerUser + AmazonEC2RoleforAWSCodeDeploy
 
-3. Create AS Group
+# 2. Create Launch Configuration ---> ami-0947d2ba12ee1ff75
 
-4. s3 bucket ---> put .zip
+# 3. Create AS Group
 
-5. codedeploy app + group + role ---> AWSCodeDeployRole
+# 4. s3 bucket ---> put .zip
 
-6. codepipeline
+# 5. codedeploy app + group + role ---> AWSCodeDeployRole
+
+# 6. codepipeline
 
