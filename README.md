@@ -10,8 +10,8 @@ https://cloudgeeks.ca
 # 2. Create Launch Configuration ---> ami-0947d2ba12ee1ff75
 
 # 3. Create AS Group
-
-# 4. s3 bucket ---> put .zip
+ 
+# 4. s3 bucket ---> put .zip  ---> update .zip with ECR URI ---> eg.ECR REPO NAME cloudgeeks-nginx ---> ECR REPO URI 286601674019.dkr.ecr.us-east-1.amazonaws.com/cloudgeeks-nginx
 
 # 5. codedeploy app + group + role ---> AWSCodeDeployRole
 
