@@ -7,7 +7,7 @@ https://cloudgeeks.ca
 
 # 1. Create a Role for EC2 with ECR access ---> AmazonEC2ContainerRegistryPowerUser + AmazonEC2RoleforAWSCodeDeploy
 
-# 2. Create Launch Configuration ---> ami-0947d2ba12ee1ff75
+# 2. Create Launch Configuration ---> ami-0947d2ba12ee1ff75 (AmazonLinux2)
 
 # 3. Create AS Group
  
