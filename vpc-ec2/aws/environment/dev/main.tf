@@ -29,7 +29,7 @@ module "ec2" {
   name                        = "ec2"
   key_name                    = "ec2"
   instance_count              = 1
-  ami                         = "ami-0fc61db8544a617ed"
+  ami                         = "ami-0947d2ba12ee1ff75"
   instance_type               = "t3a.medium"
   associate_public_ip_address = "true"
   root_volume_size            = 30
